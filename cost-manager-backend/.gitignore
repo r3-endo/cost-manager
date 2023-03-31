@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+dist/
+build/
+.cache/
+npm-debug.log*
+
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+*~
+*.log
+
+# Compiled Output
+**/*.js
+**/*.map
+
+# Miscellaneous
+.DS_Store
