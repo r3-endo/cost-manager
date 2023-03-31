@@ -4,6 +4,11 @@
 ```code
 npx create-react-app cost-manager-frontend --template typescript
 ```
+- ESLintの導入
+```code
+npm install eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser --save-dev
+touch .eslintrc.json
+```
 ### backendの構築
 - 初期構築
 ```code
