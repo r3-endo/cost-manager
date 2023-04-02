@@ -1,30 +1,9 @@
 import React from 'react'
 import Header from '../../components/Header'
-import {
-  Chart as ChartJS,
-  LinearScale,
-  CategoryScale,
-  BarElement,
-  LineElement,
-  Legend,
-  Tooltip,
-  LineController,
-  BarController,
-  DoughnutController,
-} from 'chart.js'
-import { Bar } from 'react-chartjs-2'
+import { Chart as ChartJS, Legend, Tooltip, ArcElement } from 'chart.js'
+import { Pie } from 'react-chartjs-2'
 
-ChartJS.register(
-  LinearScale,
-  CategoryScale,
-  BarElement,
-  LineElement,
-  Legend,
-  Tooltip,
-  LineController,
-  BarController,
-  DoughnutController
-)
+ChartJS.register(Legend, Tooltip, ArcElement)
 
 const chartData = {
   labels: ['Red', 'Blue', 'Yellow'],
@@ -47,8 +26,10 @@ const Home: React.FC = () => {
     <div>
       <Header />
       <div>
-        <h2>総資産推移</h2>
-        <Bar data={chartData} options={chartOptions} />
+        <h2>総資産</h2>
+        <div style={{ width: '50rem', height: '30rem', margin: 0, textAlign: 'center' }}>
+          <Pie data={chartData} options={chartOptions} />
+        </div>
       </div>
     </div>
   )
