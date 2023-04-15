@@ -8,7 +8,7 @@
   "plugins": ["@typescript-eslint", "react", "prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json",
+    "project": "./cost-manager-frontend/tsconfig.json",
     "ecmaFeatures": {
       "jsx": true
     }
