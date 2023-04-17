@@ -46,13 +46,13 @@ const useChartOptions = (labels: any) => {
   }
 }
 
-export const ExpenditureGraph = (props: any) => {
+export const IncomeGraph = (props: any) => {
   const { chartSeries, labels, sx } = props
   const chartOptions = useChartOptions(labels)
 
   return (
     <Card sx={sx}>
-      <CardHeader title="支出内訳" />
+      <CardHeader title="収入内訳" />
       <CardContent>
         <Chart height={300} options={chartOptions} series={chartSeries} type="donut" width="100%" />
         <Stack alignItems="center" direction="row" justifyContent="center" spacing={2} sx={{ mt: 2 }}>
@@ -82,7 +82,7 @@ export const ExpenditureGraph = (props: any) => {
   )
 }
 
-ExpenditureGraph.propTypes = {
+IncomeGraph.propTypes = {
   chartSeries: PropTypes.array.isRequired,
   labels: PropTypes.array.isRequired,
   sx: PropTypes.object,
