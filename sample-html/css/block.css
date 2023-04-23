@@ -1,0 +1,447 @@
+/*================================================= 
+Table (horizen)
+==================================================*/
+
+.bl_horizTable {
+  border: 1px solid #ddd;
+}
+
+.bl_horizTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bl_horizTable th {
+  width: 20%;
+  padding: 15px;
+  background-color: #efefef;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.bl_horizTable td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bl_horizTable tr:last-child th,
+.bl_horizTable tr:last-child td {
+  border-bottom-width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bl_horizTable.bl_horizTable__mdScroll {
+    border-right-width: 0;
+    overflow-x: auto;
+  }
+
+  .bl_horizTable.bl_horizTable__mdScroll th,
+  .bl_horizTable.bl_horizTable__mdScroll td {
+    white-space: nowrap;
+  }
+
+  .bl_horizTable.bl_horizTable__mdScroll td {
+    border-right: 1px solid #ddd;
+  }
+}
+
+/*================================================= 
+Table (vertical)
+==================================================*/
+
+.bl_vertTable {
+  border: 1px solid #ddd;
+}
+
+.bl_vertTable table {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.bl_vertTable thead tr {
+  background-color: #efefef;
+}
+
+.bl_vertTable th {
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.bl_vertTable td {
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.bl_vertTable th:last-child,
+.bl_vertTable td:last-child {
+  border-right-width: 0;
+}
+
+.bl_vertTable tbody tr:last-child td {
+  border-bottom-width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bl_vertTable {
+    border-right-width: 0;
+    overflow-x: auto;
+  }
+
+  .bl_vertTable table {
+    width: auto;
+    min-width: 100%;
+  }
+
+  .bl_vertTable th,
+  .bl_vertTable td {
+    white-space: nowrap;
+  }
+
+  .bl_vertTable th:last-child,
+  .bl_vertTable td:last-child {
+    border-right-width: 1px;
+  }
+}
+
+/*================================================= 
+Posts
+==================================================*/
+
+.bl_vertPosts {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.bl_vertPosts_item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bl_vertPosts_item:first-child {
+  padding-top: 0;
+}
+
+.bl_vertPosts_header {
+  margin-bottom: 10px;
+}
+
+.bl_vertPosts_date {
+  font-size: 0.875rem;
+}
+
+.bl_vertPosts_ttl {
+  text-decoration: none;
+}
+
+.bl_vertPosts_ttl:focus,
+.bl_vertPosts_ttl:hover {
+  text-decoration: underline;
+}
+
+/*================================================= 
+CostTable
+==================================================*/
+
+.bl_costTable {
+  border: 1px solid #ddd;
+}
+
+.bl_costTable table {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.bl_costTable thead tr {
+  background-color: #efefef;
+}
+
+.bl_costTable th {
+  padding: 15px;
+  border: 0;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.bl_costTable td {
+  padding: 15px;
+  border: 0;
+  vertical-align: middle;
+}
+
+.bl_costTable th:last-child,
+.bl_costTable td:last-child {
+  border-right-width: 0;
+}
+
+.bl_costTable tbody tr:last-child td {
+  border-bottom-width: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .bl_costTable {
+    border-right-width: 0;
+    overflow-x: auto;
+  }
+
+  .bl_costTable table {
+    width: auto;
+    min-width: 100%;
+  }
+
+  .bl_costTable th,
+  .bl_costTable td {
+    white-space: nowrap;
+  }
+
+  .bl_costTable th:last-child,
+  .bl_costTable td:last-child {
+    border-right-width: 1px;
+  }
+}
+
+/*================================================= 
+calTable
+==================================================*/
+
+.bl_calTable {
+  border: 1px solid #ddd;
+  overflow-x: auto;
+}
+
+.bl_calTable table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.bl_calTable thead tr {
+  background-color: #efefef;
+}
+
+.bl_calTable th {
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.bl_calTable td {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.bl_calTable th:last-child,
+.bl_calTable td:last-child {
+  border-right-width: 0;
+}
+
+.bl_calTable tbody tr:last-child td {
+  border-bottom-width: 0;
+}
+
+/*土日の日付のデザイン*/
+
+.bl_calTable th:nth-of-type(1) {
+  color: red;
+}
+
+.bl_calTable th:nth-of-type(7) {
+  color: blue;
+}
+
+.bl_calTable td:nth-of-type(1) .bl_calDay_date {
+  color: red;
+}
+
+.bl_calTable td:nth-of-type(7) .bl_calDay_date {
+  color: blue;
+}
+
+/*日付ブロックのデザイン*/
+
+.bl_calDay {
+  height: 80px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bl_calDay_date {
+  padding-bottom: 5px;
+  text-align: right;
+}
+
+.bl_calDay_cost {
+  font-size: 0.75rem;
+  padding-bottom: 20px;
+  text-align: right;
+}
+
+.bl_calDay_link {
+  padding-bottom: 5px;
+  text-align: right;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .bl_calTable {
+    border-right-width: 0;
+  }
+
+  .bl_calTable table {
+    width: auto;
+    min-width: 100%;
+  }
+
+  .bl_calTable th,
+  .bl_calTable td {
+    white-space: nowrap;
+  }
+
+  .bl_calTable th:last-child,
+  .bl_calTable td:last-child {
+    border-right-width: 1px;
+  }
+}
+
+/*================================================= 
+Form
+==================================================*/
+
+.bl_form {
+  width: 70%;
+}
+
+.bl_form_btn {
+  padding-top: 10px;
+}
+
+/*================================================= 
+Form Navigation
+==================================================*/
+
+.bl_formNav {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+.bl_formNav_item {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.bl_formNav_item:last-child .bl_formNav_link::after {
+  content: none;
+}
+
+.bl_formNav_link {
+  position: relative;
+  display: block;
+  padding: 15px 5px;
+  border-bottom: 4px solid transparent;
+  color: #222;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.bl_formNav_link:focus,
+.bl_formNav_link:hover {
+  border-bottom-color: #e25c00;
+}
+
+.bl_formNav_link::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background-color: #ddd;
+  transform: translateY(-50%);
+}
+
+.bl_formNav li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.bl_formNav.is_active {
+  border-bottom-color: currentColor;
+  color: #e25c00;
+  pointer-events: none;
+}
+
+/*================================================= 
+Modal
+==================================================*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 20% auto;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-header h1 {
+  margin: 1rem 0;
+}
+
+.modal-header {
+  background: lightblue;
+  padding: 3px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalClose {
+  font-size: 2rem;
+}
+
+.modalClose:hover {
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  color: black;
+}

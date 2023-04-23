@@ -1,0 +1,24 @@
+.ly_cont.ly_cont__col {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ly_cont_main {
+  flex: 1;
+  margin-left: 3.25203%;
+}
+
+.ly_cont_side {
+  flex: 0 0 260px;
+}
+
+@media screen and (max-width: 768px) {
+  .ly_cont.ly_cont__col {
+    flex-direction: column;
+  }
+
+  .ly_cont_main {
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+}

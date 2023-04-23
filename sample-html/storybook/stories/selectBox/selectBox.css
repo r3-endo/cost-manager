@@ -1,0 +1,11 @@
+.el_seclectBox {
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+.el_seclectBox:focus {
+  border: 1px solid #ffc299;
+  outline: 0;
+}

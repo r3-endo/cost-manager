@@ -1,0 +1,158 @@
+/*================================================= 
+Headline
+==================================================*/
+
+/* Level 1*/
+
+.el_lv1Heading {
+  padding: 30px 10px;
+  background-color: #e25c00;
+  color: #fff;
+  font-size: 1.75rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+.el_lv1Heading > span {
+  position: relative;
+  display: inline-block;
+  transform: translateY(-20%);
+}
+
+.el_lv1Heading > span::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 1px;
+  background-color: currentColor;
+  transform: translateX(-50%);
+}
+
+/* Level 2*/
+
+.el_lv2Heading {
+  padding-bottom: 10px;
+  border-bottom: 4px solid #e25c00;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+/* Level 3*/
+
+.el_lv3Heading {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e25c00;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+/* Level 4*/
+
+.el_lv4Heading {
+  padding-left: 6px;
+  border-left: 2px solid #e25c00;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+/*================================================= 
+Icon
+==================================================*/
+
+.el_afterIcon::after {
+  display: inline-block;
+  margin-left: 0.3em;
+  color: #e25c00;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.el_afterIcon.el_afterIcon__chevRight::after {
+  content: "\f0a4";
+}
+.el_afterIcon {
+  display: block;
+  text-align: right;
+}
+
+.el_afterIcon.el_afterIcon__pen::after {
+  content: "\f5ad";
+}
+
+/*================================================= 
+seclectBox
+==================================================*/
+
+.el_seclectBox {
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+.el_seclectBox:focus {
+  border: 1px solid #ffc299;
+  outline: 0;
+}
+
+/*================================================= 
+inputBox
+==================================================*/
+
+.el_inputBoxText {
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+.el_inputBoxText:focus {
+  border: 1px solid #ffc299;
+  outline: 0;
+}
+
+.el_inputBoxNumber {
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+.el_inputBoxNumber:focus {
+  border: 1px solid #ffc299;
+  outline: 0;
+}
+
+/*================================================= 
+roundedBtn
+==================================================*/
+
+.el_roundedBtn {
+  display: inline-block;
+  width: 100px;
+  max-width: 100%;
+  padding: 10px 10px;
+  background-color: #e25c00;
+  border: 2px solid transparent;
+  border-bottom-color: #d40152;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.25s;
+  box-sizing: border-box;
+}
+
+.el_roundedBtn:focus,
+.el_roundedBtn:hover {
+  background-color: #fff;
+  border-color: currentColor;
+  color: #e25c00;
+}

@@ -1,0 +1,50 @@
+/*================================================= 
+Modal
+==================================================*/
+.overlays {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlays .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+.overlays:target {
+  visibility: visible;
+  opacity: 1;
+}
+.modals {
+  margin: 0px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #666;
+  width: 400px;
+  border-radius: 6px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.modals .close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  transition: all 200ms;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #777;
+}
+.modals .close:hover {
+  opacity: 1;
+}

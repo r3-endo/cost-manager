@@ -1,0 +1,23 @@
+.el_inputBoxText {
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+.el_inputBoxText:focus {
+  border: 1px solid #ffc299;
+  outline: 0;
+}
+
+.el_inputBoxNumber {
+  height: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+}
+
+.el_inputBoxNumber:focus {
+  border: 1px solid #ffc299;
+  outline: 0;
+}
