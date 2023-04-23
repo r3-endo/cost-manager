@@ -1,0 +1,22 @@
+{
+  "categories":[
+    {
+      "label": "飲食費",
+      "expenditure": 2000,
+      "percentage": 20,
+      "ranking": 3
+    },
+    {
+      "label": "書籍費",
+      "expenditure": 3000,
+      "percentage": 30,
+      "ranking": 2
+    },
+    {
+      "label": "交際費",
+      "expenditure": 5000,
+      "percentage": 50,
+      "ranking": 1
+    }
+  ]
+}

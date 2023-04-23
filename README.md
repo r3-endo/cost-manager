@@ -2,13 +2,22 @@
 ### frontendの構築
 - reactのインストール
 ```code
-npx create-react-app cost-manager-frontend --template typescript
+npx create-react-app cost-manager-react --template typescript
 ```
-- ESLintの導入
+- Material UIの導入
 ```code
-npm install eslint @typescript-eslint/eslint-plugin @typescript-eslint/parser --save-dev
-touch .eslintrc.json
+npm install @mui/material @emotion/react @emotion/styled
+npm install @mui/material @mui/styled-engine-sc styled-components
 ```
+- Storybookの導入
+```code
+npx storybook@latest init
+```
+- SCSSの導入
+```code
+npm install node-sass --save-dev
+```
+
 ### backendの構築
 - 初期構築
 ```code
