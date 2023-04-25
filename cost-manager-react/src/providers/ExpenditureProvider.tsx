@@ -1,4 +1,4 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect } from 'react';
 import { ExpenditureModel } from "../models/ExpenditureModel";
 import { getExpenditure } from '../service/backend-service';
 import { useRecoilState } from 'recoil';

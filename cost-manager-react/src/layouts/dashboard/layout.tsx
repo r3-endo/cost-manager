@@ -1,4 +1,4 @@
-import React, { createContext } from 'react'
+import React from 'react'
 import Expenditure from '../../pages/Household/Expenditure'
 import ExpenditureGraph from '../../pages/Household/ExpenditureGraph';
 import Income from '../../pages/Household/Income';
@@ -8,6 +8,8 @@ import { ExpenditureGraphProvider } from '../../providers/ExpenditureGraphProvid
 import { IncomeProvider } from '../../providers/IncomeProvider';
 import EaringsHistoryGraph from '../../pages/Household/EaringsHistoryGraph';
 import { EaringsHistoryGraphProvider } from '../../providers/EaringsHistoryGraphProvider';
+import { EaringsProvider } from '../../providers/EaringsProvider';
+import Earing from '../../pages/Household/Earing';
 
 function layout() {
 
@@ -16,6 +18,12 @@ function layout() {
       <Box component="main" sx={{ flexGrow: 1, py: 8}}>
         <Container maxWidth="xl">
           <Grid container spacing={3}>
+          <Grid xs={12} sm={6} lg={3}>
+              <EaringsProvider>
+                <Earing title='総収支'></Earing>
+              </EaringsProvider>
+            </Grid>
+
             <Grid xs={12} sm={6} lg={3}>
               <ExpenditureProvider>
                 <Expenditure title='総支出'></Expenditure>

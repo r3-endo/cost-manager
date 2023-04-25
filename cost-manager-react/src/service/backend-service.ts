@@ -3,6 +3,7 @@ import { ExpenditureModel } from "../models/ExpenditureModel";
 import { ExpenditureGraphModel } from "../models/ExpenditureGraphModle";
 import { IncomeModel } from "../models/IncomeModel";
 import { EaringsHistoryGraphModel } from "../models/EaringsHistoryGraphModel";
+import { EaringsModel } from "../models/EaringsModel";
 
 export const getExpenditure = async (): Promise<ExpenditureModel> => {
   const response = await axios.get<ExpenditureModel>("/assets/mockAPI/expenditureResponse.json");
@@ -21,5 +22,10 @@ export const getExpenditureGraph = async (): Promise<ExpenditureGraphModel> => {
 
 export const getEaringsHistoryGraph = async (): Promise<EaringsHistoryGraphModel> => {
   const response = await axios.get<EaringsHistoryGraphModel>("/assets/mockAPI/earingsHistoryGraphResponse.json");
+  return response.data;
+}
+
+export const getEarings = async (): Promise<EaringsModel> => {
+  const response = await axios.get<EaringsModel>("/assets/mockAPI/earingsResponse.json");
   return response.data;
 }
