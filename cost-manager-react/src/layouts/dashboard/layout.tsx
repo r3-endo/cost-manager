@@ -6,6 +6,8 @@ import { Box, Container, Grid } from '@mui/material';
 import { ExpenditureProvider } from '../../providers/ExpenditureProvider';
 import { ExpenditureGraphProvider } from '../../providers/ExpenditureGraphProvider';
 import { IncomeProvider } from '../../providers/IncomeProvider';
+import EaringsHistoryGraph from '../../pages/Household/EaringsHistoryGraph';
+import { EaringsHistoryGraphProvider } from '../../providers/EaringsHistoryGraphProvider';
 
 function layout() {
 
@@ -24,6 +26,12 @@ function layout() {
               <IncomeProvider>
                 <Income title='総収入'></Income>
               </IncomeProvider>
+            </Grid>
+
+            <Grid xs={12} lg={8}>
+              <EaringsHistoryGraphProvider>
+                <EaringsHistoryGraph title='総収入遷移'></EaringsHistoryGraph>
+              </EaringsHistoryGraphProvider>
             </Grid>
 
             <Grid xs={12} md={6} lg={4}>

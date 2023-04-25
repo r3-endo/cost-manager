@@ -1,0 +1,150 @@
+{
+  "lastYearDatas":[
+    {
+      "year": 2022,
+      "month": 1,
+      "monthName": "January",
+      "earings": 100
+    },
+    {
+      "year": 2022,
+      "month": 2,
+      "monthName": "February",
+      "earings": 120
+    },
+    {
+      "year": 2022,
+      "month": 3,
+      "monthName": "March",
+      "earings": 130
+    },
+    {
+      "year": 2022,
+      "month": 4,
+      "monthName": "April",
+      "earings": 100
+    },
+    {
+      "year": 2022,
+      "month": 5,
+      "monthName": "May",
+      "earings": 100
+    },
+    {
+      "year": 2022,
+      "month": 6,
+      "monthName": "June",
+      "earings": 100
+    },
+    {
+      "year": 2022,
+      "month": 7,
+      "monthName": "July",
+      "earings": 100
+    },
+    {
+      "year": 2022,
+      "month": 8,
+      "monthName": "August",
+      "earings": 100
+    },
+    {
+      "year": 2022,
+      "month": 9,
+      "monthName": "September",
+      "earings": 100
+    },
+    {
+      "year": 2022,
+      "month": 10,
+      "monthName": "October",
+      "earings": 100
+    },
+    {
+      "year": 2022,
+      "month": 11,
+      "monthName": "November",
+      "earings": 100
+    },
+    {
+      "year": 2022,
+      "month": 12,
+      "monthName": "December",
+      "earings": 100
+    }
+  ],
+  "thisYearDatas": [
+    {
+      "year": 2023,
+      "month": 1,
+      "monthName": "January",
+      "earings": 100
+    },
+    {
+      "year": 2023,
+      "month": 2,
+      "monthName": "February",
+      "earings": 120
+    },
+    {
+      "year": 2023,
+      "month": 3,
+      "monthName": "March",
+      "earings": 130
+    },
+    {
+      "year": 2023,
+      "month": 4,
+      "monthName": "April",
+      "earings": 100
+    },
+    {
+      "year": 2023,
+      "month": 5,
+      "monthName": "May",
+      "earings": 100
+    },
+    {
+      "year": 2023,
+      "month": 6,
+      "monthName": "June",
+      "earings": null
+    },
+    {
+      "year": 2023,
+      "month": 7,
+      "monthName": "July",
+      "earings": null
+    },
+    {
+      "year": 2023,
+      "month": 8,
+      "monthName": "August",
+      "earings": null
+    },
+    {
+      "year": 2023,
+      "month": 9,
+      "monthName": "September",
+      "earings": null
+    },
+    {
+      "year": 2023,
+      "month": 10,
+      "monthName": "October",
+      "earings": null
+    },
+    {
+      "year": 2023,
+      "month": 11,
+      "monthName": "November",
+      "earings": null
+    },
+    {
+      "year": 2023,
+      "month": 12,
+      "monthName": "December",
+      "earings": null
+    }
+  ]
+}
