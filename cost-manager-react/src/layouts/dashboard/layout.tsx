@@ -18,31 +18,31 @@ function layout() {
       <Box component="main" sx={{ flexGrow: 1, py: 8}}>
         <Container maxWidth="xl">
           <Grid container spacing={3}>
-          <Grid xs={12} sm={6} lg={3}>
+            <Grid xs={12} sm={6} lg={3} style={ {padding: '.5rem'}}>
               <EaringsProvider>
                 <Earing title='総収支'></Earing>
               </EaringsProvider>
             </Grid>
 
-            <Grid xs={12} sm={6} lg={3}>
+            <Grid xs={12} sm={6} lg={3} style={ {padding: '.5rem'}}>
               <ExpenditureProvider>
                 <Expenditure title='総支出'></Expenditure>
               </ExpenditureProvider>
             </Grid>
 
-            <Grid xs={12} sm={6} lg={3}>
+            <Grid xs={12} sm={6} lg={3} style={ {padding: '.5rem'}}>
               <IncomeProvider>
                 <Income title='総収入'></Income>
               </IncomeProvider>
             </Grid>
 
-            <Grid xs={12} lg={8}>
+            <Grid xs={12} lg={8} style={ {padding: '.5rem'}}>
               <EaringsHistoryGraphProvider>
                 <EaringsHistoryGraph title='総収入遷移'></EaringsHistoryGraph>
               </EaringsHistoryGraphProvider>
             </Grid>
 
-            <Grid xs={12} md={6} lg={4}>
+            <Grid xs={12} md={6} lg={4} style={ {padding: '.5rem'}}>
               <ExpenditureGraphProvider>
                 <ExpenditureGraph title='支出内訳'></ExpenditureGraph>
               </ExpenditureGraphProvider>
