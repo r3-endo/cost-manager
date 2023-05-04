@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cost Manager</title>
+    <meta name="description" content="家計管理アプリ">
+    <!--レスポンシブデザインにするため、デバイスの幅で幅を調整する-->
+    <meta name="viewport" contest="width=device-width">
+    <script src="../js/toggle-menu.js"></script>
+    <link href="../css/base.css" rel="stylesheet">
+    <link href="../css/block.css" rel="stylesheet">
+    <link href="../css/element.css" rel="stylesheet">
+    <link href="../css/normalize.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <link href="../css/helper.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/539f1407c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="ly_header">
+        <div class="ly_header_inner">
+            <div class="bl_headerUtils">
+                <a class="bl_headerUtils_logo" href="./index.html">
+                    <img src="../images/common/logo-header.png" alt="logo">
+                </a>
+                <!--スマホ用のメニューボタン-->
+                <button class="el_toggleButton"></button>
+            </div>
+            <nav>
+                <ul class="bl_headerNav">
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="./index.html">ホーム</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="./budget.html">家計</a></li>
+                    <li class="bl_headerNav_item"><a class="bl_headerNav_link" href="./assets.html">資産</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1 class="el_lv1Heading">
+        <span>家計</span>
+    </h1>
+    <div class="ly_cont ly_cont__col">
+        <main class="ly_cont_main">
+            <nav class="bl_tabNav">
+                <ul class="bl_tabNav_inner">
+                    <li>
+                        <a class="bl_tabNav_link is_active" href="./budget.html">入出金</a>
+                    </li>
+                    <li>
+                        <a class="bl_tabNav_link" href="./income.html">収支詳細</a>
+                    </li>
+                    <li>
+                        <a class="bl_tabNav_link" href="#">月次推移</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="el_lv3Heading">
+                入出金
+            </h3>
+            <div class="bl_costTable hp_mb20">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>当月収入</th>
+                            <th></th>
+                            <th>当月支出</th>
+                            <th></th>
+                            <th>当月収支</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10,000円</td>
+                            <td>ー</td>
+                            <td>0円</td>
+                            <td>＝</td>
+                            <td>10,000円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4 class="el_lv4Heading">
+                2023年4月
+            </h4>
+            <div class="bl_calTable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>日</th>
+                            <th>月</th>
+                            <th>火</th>
+                            <th>水</th>
+                            <th>木</th>
+                            <th>金</th>
+                            <th>土</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        1
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                        +10000
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        2
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        3
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        4
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        5
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        6
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        7
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        8
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        9
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        10
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        11
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        12
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        13
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        14
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        15
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        16
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        17
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        18
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        19
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        20
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        21
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        22
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        23
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        24
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        25
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        26
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        27
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        28
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        29
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                        30
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                        <a class="el_beforeIconBtn el_beforeIconBtn__pen" href="#"></a>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="bl_calDay">
+                                    <div class="bl_calDay_date">
+                                    </div>
+                                    <div class="bl_calDay_cost">
+                                    </div>
+                                    <div class="bl_calDay_link">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="actions">
+                <button data-modal="true">Open Modal</button>
+            </div>
+        </main>
+    </div>
+
+    <dialog class="bl_form">
+        <div class="bl_formHeader_inner">
+            <h4 class="el_lv4Heading">
+                家計簿入力
+            </h4>
+            <a class="el_beforeIconBtn el_beforeIconBtn__cross" href="#">閉じる</a>
+        </div>
+        <form action="" method="post">
+            <nav>
+                <ul class="bl_formNav">
+                    <li class="bl_formNav_item"><a class="bl_formNav_link" href="#">収入</a></li>
+                    <li class="bl_formNav_item"><a class="bl_formNav_link" href="#">支出</a></li>
+                </ul>
+            </nav>
+            <div class="bl_horizTable bl_horizTable__mdScroll">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>日付</th>
+                            <td>
+                                <input name="text" class="el_inputBoxText">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>金額</th>
+                            <td>
+                                <input type="number" name="price" class="el_inputBoxNumber">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>分類</th>
+                            <td>
+                                <select class="el_seclectBox" name="category">
+                                    <option value=""></option>
+                                    <option value="食費">食費</option>
+                                    <option value="日用品">日用品</option>
+                                    <option value="交際費">交際費</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>備考</th>
+                            <td>
+                                <input type="text" name="option" class="el_inputBoxText">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="bl_form_btn">
+                <input type="submit" class="el_roundedBtn" value="送信">
+            </div>
+        </form>
+    </dialog>
+
+    <footer class="ly-footer">
+        <div class="ly_footer_inner">
+            <a class="bl_footer-logo" href="#">
+                <img src="../images/common/logo-footer.png" alt="logo">
+            </a>
+            <p class="bl_copyright"><small>&copy;Cost Manager</small></p>
+        </div>
+    </footer>
+
+    <script>
+        const BUTTONS = document.querySelectorAll("button");
+        const DIALOG = document.querySelector("dialog");
+
+        BUTTONS.forEach((BUTTON) => {
+            BUTTON.addEventListener("click", (e) => {
+                let modalStyle;
+                switch (BUTTON.getAttribute("data-modal")) {
+                    case "true":
+                        modalStyle = "showModal";
+                        break;
+                    case "false":
+                        modalStyle = "show";
+                        break;
+                    default:
+                        modalStyle = "close";
+                }
+                DIALOG[modalStyle]();
+            });
+        });
+    </script>
+</body>
+
+</html>

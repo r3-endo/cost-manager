@@ -1,0 +1,54 @@
+<div class="bl_form">
+    <div class="bl_formHeader_inner">
+        <h4 class="el_lv4Heading">
+            家計簿入力
+        </h4>
+        <a class="el_beforeIconBtn el_beforeIconBtn__cross" href="#">閉じる</a>
+    </div>
+    <form action="" method="post">
+        <nav>
+            <ul class="bl_formNav">
+                <li class="bl_formNav_item"><a class="bl_formNav_link" href="#">収入</a></li>
+                <li class="bl_formNav_item"><a class="bl_formNav_link" href="#">支出</a></li>
+            </ul>
+        </nav>
+        <div class="bl_horizTable bl_horizTable__mdScroll">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>日付</th>
+                        <td>
+                            <input name="text" class="el_inputBoxText">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>金額</th>
+                        <td>
+                            <input type="number" name="price" class="el_inputBoxNumber">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>分類</th>
+                        <td>
+                            <select class="el_seclectBox" name="category">
+                                <option value=""></option>
+                                <option value="食費">食費</option>
+                                <option value="日用品">日用品</option>
+                                <option value="交際費">交際費</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>備考</th>
+                        <td>
+                            <input type="text" name="option" class="el_inputBoxText">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="bl_form_btn">
+            <input type="submit" class="el_roundedBtn" value="送信">
+        </div>
+    </form>
+</div>

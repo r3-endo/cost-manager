@@ -1,0 +1,105 @@
+.bl_calTable {
+  border: 1px solid #ddd;
+  overflow-x: auto;
+}
+
+.bl_calTable table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.bl_calTable thead tr {
+  background-color: #efefef;
+}
+
+.bl_calTable th {
+  padding: 15px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.bl_calTable td {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.bl_calTable th:last-child,
+.bl_calTable td:last-child {
+  border-right-width: 0;
+}
+
+.bl_calTable tbody tr:last-child td {
+  border-bottom-width: 0;
+}
+
+/*================================================= 
+土日の日付のデザイン
+==================================================*/
+
+.bl_calTable th:nth-of-type(1) {
+  color: red;
+}
+
+.bl_calTable th:nth-of-type(7) {
+  color: blue;
+}
+
+.bl_calTable td:nth-of-type(1) .bl_calDay_date {
+  color: red;
+}
+
+.bl_calTable td:nth-of-type(7) .bl_calDay_date {
+  color: blue;
+}
+
+/*================================================= 
+日付ブロックのデザイン
+==================================================*/
+
+.bl_calDay {
+  height: 80px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bl_calDay_date {
+  padding-bottom: 5px;
+  text-align: right;
+}
+
+.bl_calDay_cost {
+  font-size: 0.75rem;
+  padding-bottom: 20px;
+  text-align: right;
+}
+
+.bl_calDay_link {
+  padding-bottom: 5px;
+  text-align: right;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .bl_calTable {
+    border-right-width: 0;
+  }
+
+  .bl_calTable table {
+    width: auto;
+    min-width: 100%;
+  }
+
+  .bl_calTable th,
+  .bl_calTable td {
+    white-space: nowrap;
+  }
+
+  .bl_calTable th:last-child,
+  .bl_calTable td:last-child {
+    border-right-width: 1px;
+  }
+}

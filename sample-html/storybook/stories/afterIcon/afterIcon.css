@@ -1,0 +1,24 @@
+.el_afterIcon::after {
+  display: inline-block;
+  margin-left: 0.3em;
+  color: #e25c00;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.el_afterIcon.el_afterIcon__chevRight::after {
+  content: "\f0a4";
+}
+
+.el_afterIcon.el_afterIcon__pen::after {
+  content: "\f5ad";
+}
+
+.el_afterIcon.el_afterIcon__cross::after {
+  content: "\f057";
+}
+
+.el_afterIcon {
+  display: block;
+  text-align: right;
+}
