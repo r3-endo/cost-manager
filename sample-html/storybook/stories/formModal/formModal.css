@@ -1,50 +1,69 @@
 /*================================================= 
 Modal
 ==================================================*/
-.overlays {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  transition: opacity 200ms;
-  visibility: hidden;
-  opacity: 0;
+@layer demo {
+  dialog[open]:not(:modal) {
+    z-index: 2;
+    transform-style: preserve-3d;
+  }
+
+  dialog[open]:not(:modal):before {
+    content: "";
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    background: hsl(0 0% 10% / 0.25);
+    transform: translate3d(-50%, -50%, -1px);
+  }
 }
-.overlays .cancel {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  cursor: default;
-}
-.overlays:target {
-  visibility: visible;
-  opacity: 1;
-}
-.modals {
-  margin: 0px auto;
-  padding: 20px;
-  background: #fff;
-  border: 1px solid #666;
-  width: 400px;
-  border-radius: 6px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  position: relative;
-}
-.modals .close {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 20px;
-  right: 20px;
-  opacity: 0.8;
-  transition: all 200ms;
-  font-size: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #777;
-}
-.modals .close:hover {
-  opacity: 1;
+
+@layer base {
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: var(--gradient-3);
+    font-family: "Google Sans", sans-serif, system-ui;
+  }
+
+  .actions {
+    display: flex;
+    gap: var(--size-4);
+  }
+
+  dialog {
+    padding: var(--size-4);
+    gap: var(--size-2);
+    background: var(--surface-1);
+  }
+
+  dialog::backdrop {
+    background: hsl(0 0% 10% / 0.5);
+  }
+
+  dialog[open] {
+    display: grid;
+  }
+
+  .warning-message {
+    border: var(--size-1) solid var(--yellow-4);
+    padding: var(--size-4);
+    background: var(--gray-0);
+    position: fixed;
+    top: var(--size-4);
+    left: var(--size-4);
+  }
+  @supports (selector(:modal)) {
+    .warning-message {
+      display: none;
+    }
+  }
 }

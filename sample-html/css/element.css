@@ -86,6 +86,47 @@ Icon
   content: "\f5ad";
 }
 
+.el_afterIcon.el_afterIcon__cross::after {
+  content: "\f057";
+}
+
+/*================================================= 
+Icon Botton
+==================================================*/
+
+.el_beforeIconBtn {
+  position: relative;
+  display: inline-block;
+  padding: 0.2em 0.3em;
+  border: none;
+  color: #e25c00;
+  text-decoration: none;
+  transition: 0.25s;
+  box-sizing: border-box;
+}
+
+.el_beforeIconBtn::before {
+  display: inline-block;
+  margin-right: 0.5em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.el_beforeIconBtn.el_beforeIconBtn__cross::before {
+  content: "\f057";
+  margin: 0;
+}
+
+.el_beforeIconBtn.el_beforeIconBtn__pen::before {
+  content: "\f5ad";
+  margin: 0;
+}
+
+.el_beforeIconBtn.el_beforeIconBtn__trash::before {
+  content: "\f2ed";
+  margin: 0;
+}
+
 /*================================================= 
 seclectBox
 ==================================================*/

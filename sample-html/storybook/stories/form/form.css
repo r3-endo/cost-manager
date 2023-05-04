@@ -6,6 +6,11 @@
   padding-top: 10px;
 }
 
+.bl_formHeader_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*================================================= 
 Form Navigation
 ==================================================*/
@@ -59,7 +64,7 @@ Form Navigation
   font-weight: bold;
 }
 
-.bl_formNav.is_active {
+.bl_formNav_link.is_active {
   border-bottom-color: currentColor;
   color: #e25c00;
   pointer-events: none;

@@ -14,6 +14,10 @@
   content: "\f5ad";
 }
 
+.el_afterIcon.el_afterIcon__cross::after {
+  content: "\f057";
+}
+
 .el_afterIcon {
   display: block;
   text-align: right;
