@@ -5,8 +5,7 @@ import { Input } from './atoms/input/Input'
 function TopPage() {
   return (
     <>
-    <PrimaryButton>hoge</PrimaryButton>
-    <Input>gg</Input>
+      <PrimaryButton>test</PrimaryButton>
     </>
   )
 }
